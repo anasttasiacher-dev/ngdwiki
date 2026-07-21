@@ -1,0 +1,16 @@
+{
+  "useMarkdownLinks": true,
+  "newLinkFormat": "relative",
+  "attachmentFolderPath": "./attachments",
+  "alwaysUpdateLinks": true,
+  "livePreview": true,
+  "userIgnoreFilters": [
+    "mkdocs.yml",
+    "convert.py",
+    "requirements.txt",
+    "README.md",
+    ".github/",
+    "venv/",
+    "site/"
+  ]
+}

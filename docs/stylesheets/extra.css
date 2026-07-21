@@ -1,0 +1,227 @@
+/* ============ Фирменная палитра NGDWiki (бренд-синий) ============ */
+[data-md-color-primary=custom] {
+  --md-primary-fg-color:        #1C5CA5;
+  --md-primary-fg-color--light: #3a78c0;
+  --md-primary-fg-color--dark:  #164a86;
+  --md-primary-bg-color:        #ffffff;
+  --md-primary-bg-color--light: #ffffffb3;
+}
+[data-md-color-accent=custom] {
+  --md-accent-fg-color:             #2b7de0;
+  --md-accent-fg-color--transparent:#2b7de01a;
+}
+
+/* Ссылки и акценты в тексте */
+[data-md-color-scheme=default] {
+  --md-typeset-a-color: #1C5CA5;
+  --md-footer-bg-color: #1C5CA5;
+  --md-footer-bg-color--dark: #164a86;
+  --ngd-hero-1: #164a86;
+  --ngd-hero-2: #2b7de0;
+  --ngd-card-bg: #ffffff;
+  --ngd-card-border: #e4ebf4;
+}
+[data-md-color-scheme=slate] {
+  --md-typeset-a-color: #7fb2f0;
+  --md-primary-fg-color: #16294a;
+  --md-footer-bg-color: #16294a;
+  --md-footer-bg-color--dark: #0f1d33;
+  --ngd-hero-1: #142c4d;
+  --ngd-hero-2: #1e558f;
+  --ngd-card-bg: var(--md-code-bg-color);
+  --ngd-card-border: #22344f;
+}
+
+/* ============ Типографика и раскладка ============ */
+.md-grid { max-width: 62rem; }               /* немного шире и воздушнее */
+.md-typeset { font-size: .78rem; line-height: 1.72; }
+.md-typeset h1 { font-weight: 800; letter-spacing: -.02em; }
+.md-typeset h2 { font-weight: 700; letter-spacing: -.01em; margin-top: 2.2em; }
+.md-typeset h2 { border-bottom: 1px solid var(--md-default-fg-color--lightest); padding-bottom: .25em; }
+.md-typeset h3 { font-weight: 650; }
+
+/* Заголовок сайта */
+.md-header { box-shadow: 0 1px 0 rgba(0,0,0,.06); }
+.md-header__title { font-weight: 700; letter-spacing: .01em; }
+
+/* ============ Картинки ============ */
+.md-typeset img {
+  border-radius: 10px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  box-shadow: 0 4px 18px rgba(20,16,45,.08);
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.4em auto;
+}
+
+/* ============ Таблицы ============ */
+.md-typeset table:not([class]) {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(20,16,45,.06);
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+.md-typeset table:not([class]) th {
+  background: var(--md-primary-fg-color);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ============ Плашки (admonitions) ============ */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 10px;
+  border-width: 0 0 0 3px;
+  box-shadow: 0 2px 12px rgba(20,16,45,.05);
+}
+
+/* ============ Цитаты ============ */
+.md-typeset blockquote {
+  border-left: 3px solid var(--md-accent-fg-color);
+  background: var(--md-accent-fg-color--transparent);
+  border-radius: 0 8px 8px 0;
+  padding: .3em 1em;
+  color: inherit;
+}
+
+/* ============ Логотип в шапке (эмблема + текст NGDWiki) ============ */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg { height: 1.8rem; width: auto; }
+
+/* ============ Дисклеймер на главной ============ */
+.ngd-disclaimer {
+  font-size: .72rem;
+  line-height: 1.6;
+  color: var(--md-default-fg-color--light);
+  border-left: 3px solid var(--md-primary-fg-color);
+  padding: .5rem 0 .5rem 1rem;
+  margin: .2rem 0 1.6rem;
+}
+
+/* ============ Боковая навигация ============ */
+/* Заголовки тематических секций */
+.md-nav--primary .md-nav__item--section > .md-nav__link {
+  color: var(--md-primary-fg-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: .62rem;
+  letter-spacing: .05em;
+  margin-top: 1.1em;
+  margin-bottom: .2em;
+  opacity: 1;
+}
+[data-md-color-scheme=slate] .md-nav--primary .md-nav__item--section > .md-nav__link {
+  color: var(--md-typeset-a-color);
+}
+/* Пункты внутри секций: аккуратные переносы, плотнее */
+.md-nav__item .md-nav__link {
+  line-height: 1.3;
+  padding-top: .18rem;
+  padding-bottom: .18rem;
+}
+.md-nav__link { border-radius: 6px; }
+.md-nav__link:hover { background: var(--md-accent-fg-color--transparent); }
+/* Активный пункт */
+.md-nav__item .md-nav__link--active {
+  font-weight: 600;
+  background: var(--md-accent-fg-color--transparent);
+}
+
+/* ============ Главная: hero + карточки ============ */
+.ngd-hero {
+  margin: -.4rem 0 2.4rem;
+  padding: 2.8rem 2rem 2.6rem;
+  border-radius: 18px;
+  background: linear-gradient(135deg, var(--ngd-hero-1), var(--ngd-hero-2));
+  color: #fff;
+  text-align: center;
+}
+.ngd-hero h1 {
+  color: #fff !important;
+  font-size: 2.1rem;
+  font-weight: 800;
+  margin: 0 0 .5rem;
+  letter-spacing: -.02em;
+}
+.ngd-hero p { color: #ffffffdd; font-size: .92rem; max-width: 34rem; margin: 0 auto; }
+.ngd-hero .ngd-emoji { font-size: 2.4rem; display: block; margin-bottom: .6rem; }
+
+.md-typeset .grid.cards > ul > li {
+  border-radius: 14px;
+  border: 1px solid var(--ngd-card-border);
+  background: var(--ngd-card-bg);
+  padding: 1rem 1.1rem;
+  transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+}
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(46,38,80,.14);
+  border-color: var(--md-accent-fg-color);
+}
+.md-typeset .grid.cards > ul > li > hr { margin: .6em 0; }
+.ngd-count { color: var(--md-default-fg-color--light); font-size: .72rem; }
+
+/* ============ Алфавитный указатель (главная + глоссарий) ============ */
+:root { --ngd-letter: #2E8BE0; }               /* голубой для букв */
+[data-md-color-scheme=slate] { --ngd-letter: #5BB0F0; }
+.ngd-index { margin-top: 1rem; max-width: 44rem; }
+.ngd-index h3 {
+  color: var(--ngd-letter);                    /* буквы — голубые */
+  font-weight: 800;
+  font-size: 1.15rem;
+  margin: 1.1em 0 .35em;
+  padding-bottom: .2em;
+  border-bottom: 2px solid var(--md-default-fg-color--lightest);
+}
+.md-typeset .ngd-index ul { margin: 0 0 .4rem; list-style: none; }
+.md-typeset .ngd-index li { margin: 0; padding: .12rem 0; }
+/* Названия статей — чёрные (в тёмной теме — светлые), подчёркивание/цвет при наведении */
+.md-typeset .ngd-index a {
+  color: var(--md-default-fg-color);
+}
+.md-typeset .ngd-index a:hover {
+  color: var(--md-primary-fg-color);
+  text-decoration: underline;
+}
+[data-md-color-scheme=slate] .md-typeset .ngd-index a:hover { color: var(--ngd-letter); }
+/* Бейдж NEW */
+.ngd-new {
+  display: inline-block;
+  font-size: .58rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  color: #fff;
+  background: #2fa36b;
+  padding: .05em .5em;
+  border-radius: 999px;
+  vertical-align: middle;
+  margin-left: .35em;
+}
+
+/* ============ Фикс прокрутки бокового меню ============ */
+/* На десктопе меню/оглавление скроллятся внутри своей колонки, а не вместе со страницей */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar { height: calc(100vh - 2.4rem); }
+  .md-sidebar__scrollwrap { max-height: 100%; overflow-y: auto; }
+}
+
+/* ============ Читаемая ширина колонки текста ============ */
+/* Оптимальная длина строки для чтения. На страницах без оглавления контент
+   центрируется и не растягивается на всю ширину (иначе строки нечитаемо длинные). */
+.md-content { margin: 0 auto; }
+.md-content__inner {
+  max-width: 42rem;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 1.2rem;   /* боковые отступы всегда (важно для мобильных) */
+  padding-right: 1.2rem;
+}
+/* На узких экранах — чуть больше воздуха у краёв */
+@media screen and (max-width: 44.9375em) {
+  .md-content__inner { padding-left: 1rem; padding-right: 1rem; }
+}
+
+/* ============ Футер (без блока «вперёд/назад», тонкий) ============ */
+.md-footer-meta { font-size: .7rem; }
+.md-footer-copyright { opacity: .9; }

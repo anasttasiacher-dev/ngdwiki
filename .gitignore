@@ -1,0 +1,13 @@
+# сборка MkDocs
+site/
+
+# python venv
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# служебное
+.DS_Store
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json

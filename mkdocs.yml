@@ -1,0 +1,151 @@
+site_name: NGDWiki
+site_url: https://ngdwiki.ru/
+site_description: База знаний по нарративному гейм-дизайну
+site_author: NGDWiki
+copyright: '© NGDWiki — база знаний по нарративному гейм-дизайну · <a href="/privacy/">Политика конфиденциальности</a>'
+docs_dir: docs
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: ru
+  logo: assets/emblem.png
+  favicon: assets/favicon.png
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.top
+    - navigation.sections
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Тёмная тема
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Светлая тема
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - js/metrika-spa.js
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: false
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search:
+      lang: ru
+
+extra:
+  generator: false
+
+nav:
+  - Главная: index.md
+  - Основы:
+      - Нарративный дизайн: Narrative-design/index.md
+      - Нарративный дизайнер: Narrative-designer/index.md
+      - Гейм-дизайнер: Game-designer/index.md
+      - Сценаристы и нарративные дизайнеры: screenwriters-vs-narrative-designers/index.md
+      - 5 условий и 5 слоёв НД: 5-Conditions-and-5-Layers-of-Narrative-Design/index.md
+      - Инструменты: Tools/index.md
+      - История: History/index.md
+      - Почему мы играем в игры: Why-do-we-play-computer-games/index.md
+      - Как сделать игру: Сreate-a-game/index.md
+  - Нарратив и повествование:
+      - Нарратив: Narrative/index.md
+      - Повествование: Storytelling/index.md
+      - Повествование в играх: Game-storytelling/index.md
+      - «Видеоигровая» подача: Narrative-delivery/index.md
+      - Встроенное повествование: Embedded-storytelling/index.md
+      - Повествование через окружение: Environmental-Storytelling/index.md
+      - Спонтанное повествование: Emergent-storytelling/index.md
+      - Процедурный нарратив: Procedural-Narrative/index.md
+      - Процедурная генерация: Procedural-generation/index.md
+      - Многопользовательский нарратив: Multiplayer-Narrative/index.md
+      - Метанарратив: Metanarrative/index.md
+      - Катсцены: Cutscenes/index.md
+      - Диалоги: Dialogues/index.md
+      - Текст: Text/index.md
+      - Звук и озвучка: Sound-and-voice-acting/index.md
+  - Сюжет и структура:
+      - Сюжет: Plot/index.md
+      - Параметры истории: Story-parameters/index.md
+      - Параметры истории (Джесси Шелл): Story-parameters-by-Jesse-Schell/index.md
+      - Персонаж: Character/index.md
+      - Сеттинг: Setting/index.md
+      - Конфликт: conflict/index.md
+      - Таймлайн: Timeline/index.md
+      - Тайминги: Timings/index.md
+      - Время в игре: Time-in-the-game/index.md
+      - Темп и ритм: Tempo-and-Rhythm/index.md
+      - Игрок как соавтор: The-player-as-a-co-author/index.md
+  - Игра и геймплей:
+      - Игра: Game/index.md
+      - Геймплей: Gameplay/index.md
+      - Механики: Mechanics/index.md
+      - Интерактив: Interactive/index.md
+      - Игровые циклы: Game-cycles/index.md
+      - Интерфейс: Interface/index.md
+      - Цели: Goals/index.md
+      - Целеполагание: Goal-setting/index.md
+      - Квесты: Quests/index.md
+      - Награды: Rewards/index.md
+      - Выбор и принятие решений: Choice/index.md
+      - Агентивность: Agency/index.md
+  - Игрок опыт и эмоции:
+      - Опыт: Experience/index.md
+      - Эмоции: Emotions/index.md
+      - Классификация эмоций: Classification-of-emotions/index.md
+      - Вовлечение и погружение: Involvement-and-immersion/index.md
+      - Эффект присутствия: Presence/index.md
+      - Состояние потока: Flow/index.md
+  - Когерентность:
+      - Когерентность: Coherence/index.md
+      - Нарушения когерентности: Coherence-disorders/index.md
+      - Поддержка когерентности: Coherence-Support/index.md
+  - Аудитория:
+      - Целевая аудитория: Target-audience/index.md
+      - Аудитория игры: Game-audience/index.md
+      - Категоризация аудитории: Audience-categorization/index.md
+      - Множество аудиторий игры: Multiple-game-audiences/index.md
+      - Аудитория конкурента: Сompetitors-audience/index.md
+      - Как определить аудиторию игры: How-to-determine-the-audience-of-the-game/index.md
+      - Зачем знать аудиторию игры: Why-you-need-to-know-your-games-audience/index.md
+  - Справочник:
+      - Глоссарий: Glossary/index.md
+      - Политика конфиденциальности: privacy/index.md
